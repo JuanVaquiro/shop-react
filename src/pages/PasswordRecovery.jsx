@@ -1,3 +1,4 @@
+import '../styles/PasswordRecovery.scss'
 
 function RecoveryPassword () {
   return (
