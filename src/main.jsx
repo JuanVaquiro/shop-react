@@ -2,10 +2,10 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
-import Login from './containers/login'
-import RecoveryPassword from './containers/RecoveryPassword'
+import Login from './pages/Login'
+import RecoveryPassword from './pages/PasswordRecovery'
 import Home from './pages/Home'
-import ErrorPage from './pages/Error-page'
+import ErrorPage from './pages/NotFound'
 import './styles/global.scss'
 
 // You can do this: create your routes as JSX instead of objects.
