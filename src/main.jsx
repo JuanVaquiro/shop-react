@@ -12,6 +12,7 @@ import CreateAccount from './pages/CreateAccount'
 import Checkout from './pages/Checkout'
 import Orders from './pages/Order'
 import ErrorPage from './pages/NotFound'
+
 import './styles/global.scss'
 
 // You can do this: create your routes as JSX instead of objects.
