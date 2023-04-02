@@ -1,26 +1,18 @@
 import yardSale from './../../src/assets/logos/yard_sale.svg'
-import email from './../../src/assets/icons/email.svg'
 import '../styles/PasswordRecovery.scss'
 
 function RecoveryPassword () {
   return (
-    <div className='login'>
-      <div className='form-container'>
+    <div className='PasswordRecovery'>
+      <div className='PasswordRecovery-container'>
         <img src={yardSale} alt='logo' className='logo' />
-
-        <h1 className='title'>Email has been sent!</h1>
-        <p className='subtitle'>Please check your inbox for instructions on how to reset the password</p>
-
-        <div className='email-image'>
-          <img src={email} alt='email' />
-        </div>
-
-        <button className='primary-button login-button'>Login</button>
-
-        <p className='resend'>
-          <span>Didn't receive the email?</span>
-          <a href='/'>Resend</a>
-        </p>
+        <h1 className='title'>Password recovery</h1>
+        <p className='subtitle'>Inform the email address used to create your account</p>
+        <form action='/' className='form'>
+          <label htmlFor='email' className='label'>Email address</label>
+          <input type='text' id='email' className='input input-email' />
+          <input type='submit' value='Confirm' className='primary-button login-button' />
+        </form>
       </div>
     </div>
   )

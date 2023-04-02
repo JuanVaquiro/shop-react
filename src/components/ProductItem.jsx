@@ -5,7 +5,7 @@ import AddCart from './../../src/assets/icons/add_shopping_cart.svg'
 import '../styles/ProductItem.scss'
 
 const ProductItem = ({ product }) => {
-  const [addToCart] = useContext(AppContext)
+  const { addToCart } = useContext(AppContext)
 
   const handleCart = (item) => {
     addToCart(item)
