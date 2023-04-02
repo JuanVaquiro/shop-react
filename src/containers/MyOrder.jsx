@@ -19,10 +19,11 @@ const MyOrder = () => {
       </div>
       <div className='my-order-content'>
         {
-          state.cart.map((item) => (
+          state.cart.map((item, index) => (
             <OrderItem
-              key={`orderItem-${item.id}`}
               product={item}
+              indexValue={index}
+              key={index}
             />
           ))
         }

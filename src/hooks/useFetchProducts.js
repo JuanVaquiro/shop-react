@@ -8,7 +8,6 @@ const useFetchProducts = (API) => {
     const data = await respo.json()
     setProducts(data)
   }
-  console.log(products)
 
   useEffect(() => {
     datataGET()
