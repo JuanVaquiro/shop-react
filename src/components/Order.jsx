@@ -1,3 +1,4 @@
+import ArrowRight from './../../src/assets/icons/arrow_right.svg'
 import '../styles/Order.scss'
 
 const Order = () => {
@@ -8,7 +9,7 @@ const Order = () => {
         <span>6 articles</span>
       </p>
       <p>$560.00</p>
-      <img src='../assets/icons/arrow_right.svg' alt='arrow' />
+      <img src={ArrowRight} alt='arrow' />
     </div>
   )
 }

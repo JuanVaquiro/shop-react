@@ -1,11 +1,12 @@
 import OrderItem from '../components/OrderItem'
+import ArrowRight from './../../assets/icons/arrow_right.svg'
 import '../styles/MyOrder.scss'
 
 const MyOrder = () => {
   return (
     <aside className='MyOrder'>
       <div className='title-container'>
-        <img src='./../../src/assets/icons/arrow_right.svg' alt='arrow' />
+        <img src={ArrowRight} alt='arrow' />
         <p className='title'>My order</p>
       </div>
       <div className='my-order-content'>

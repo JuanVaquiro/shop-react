@@ -1,3 +1,4 @@
+import AddCart from './../../src/assets/icons/add_shopping_cart.svg'
 import '../styles/ProductInfo.scss'
 
 const ProductInfo = () => {
@@ -9,7 +10,7 @@ const ProductInfo = () => {
         <p>Bike</p>
         <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
         <button className='primary-button add-to-cart-button'>
-          <img src='../assets/icons/add_shopping_cart.svg' alt='add to cart' />
+          <img src={AddCart} alt='add to cart' />
           Add to cart
         </button>
       </div>

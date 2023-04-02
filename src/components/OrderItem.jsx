@@ -1,3 +1,4 @@
+import IconClose from './../../src/assets/icons/icon_close.svg'
 import '../styles/OrderItem.scss'
 
 const OrderItem = () => {
@@ -8,7 +9,7 @@ const OrderItem = () => {
       </figure>
       <p>Bike</p>
       <p>$30,00</p>
-      <img src='../assets/icons/icon_close.svg' alt='close' />
+      <img src={IconClose} alt='close' />
     </div>
   )
 }

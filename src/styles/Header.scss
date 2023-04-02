@@ -7,8 +7,14 @@ nav {
 .menu {
 	display: none;
 }
-.logo {
-	width: 100px;
+.container-logo{
+	display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+	width: 58px;
+	padding: 4px 12px;
 }
 .navbar-left ul,
 .navbar-right ul {
