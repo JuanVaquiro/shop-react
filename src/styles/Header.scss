@@ -1,6 +1,7 @@
-nav {
+.nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
 	background-color: var(--white);
@@ -8,6 +9,11 @@ nav {
 	// 👇 debe de quedarse pegado. indica que no queremos ningun espacio en el top, scroll seguir
 	position: sticky; 
 	top: 0;
+}
+
+.nav img {
+	width: 35px;
+	height: 35px;
 }
 
 .number-item {

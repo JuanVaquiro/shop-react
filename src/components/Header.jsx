@@ -6,9 +6,11 @@ import LogoS from './../../src/assets/logos/logo_sale.svg'
 import IconMenu from './../../src/assets/icons/icon_menu.svg'
 import YardSale from './../../src/assets/logos/yard_sale.svg'
 import '../styles/Header.scss'
+import MenuSidevar from './MenuSidevar'
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
+  const [toogleSidevar, setToogleSidevar] = useState(false)
   const [toggleOrders, setToggleOrders] = useState(false)
   const { state } = useContext(AppContext)
 
@@ -16,9 +18,18 @@ const Header = () => {
     setToggle(!toggle)
   }
 
+  const handleToggleSidevar = () => {
+    setToogleSidevar(!toogleSidevar)
+  }
+
   return (
-    <nav>
-      <img src={IconMenu} alt='menu' className='menu' />
+    <nav className='nav'>
+      <img
+        onClick={handleToggleSidevar}
+        src={IconMenu}
+        alt='menu'
+        className='menu'
+      />
       <div className='navbar-left'>
         <div className='container-logo'>
           <img src={YardSale} alt='logo' className='nav-logo' />
@@ -65,6 +76,9 @@ const Header = () => {
       </div>
       {
         toggle && <Menu />
+      }
+      {
+        toogleSidevar && <MenuSidevar />
       }
       {
         toggleOrders && <MyOrder setToggle={setToggleOrders} />

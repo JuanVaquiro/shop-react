@@ -1,0 +1,54 @@
+.menu-sidevar {
+	width: auto;
+	height: auto;
+	border: 1px solid var(--very-light-pink);
+	border-radius: 6px;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	background-color: var(--white);
+	top: 66px;
+	left: 0px;
+	z-index: 1;
+}
+.root-sidevar {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu-sidevar ul li {
+	text-align: start;
+  font-weight: bold;
+}
+.menu-sidevar ul li:nth-child(7) {
+	padding-bottom: 16px;
+	border-bottom: 1px solid var(--very-light-pink);
+}
+
+.menu-sidevar ul li a {
+	color: var(--back);
+	text-decoration: none;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.info{
+  list-style: none;
+	padding: 0;
+  margin-top: 20px;
+}
+
+.info-account{
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+  margin-bottom: 16%;
+}
+.email{
+  font-weight: 400;
+  font-size: 16px;
+}
+.sign-out{
+  color: var(--hospital-green);
+  font-weight: 400;
+  font-size: 16px;
+}
