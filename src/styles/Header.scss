@@ -3,6 +3,11 @@ nav {
 	justify-content: space-between;
 	padding: 0 24px;
 	border-bottom: 1px solid var(--very-light-pink);
+	background-color: var(--white);
+  width: calc(100% - 48px);
+	// 👇 debe de quedarse pegado. indica que no queremos ningun espacio en el top, scroll seguir
+	position: sticky; 
+	top: 0;
 }
 
 .number-item {

@@ -18,15 +18,17 @@ const MyOrder = () => {
         <p className='title-order'>My order</p>
       </div>
       <div className='my-order-content'>
-        {
-          state.cart.map((item, index) => (
-            <OrderItem
-              product={item}
-              indexValue={index}
-              key={index}
-            />
-          ))
-        }
+        <div className='cart-product-list'>
+          {
+            state.cart.map((item, index) => (
+              <OrderItem
+                product={item}
+                indexValue={index}
+                key={index}
+              />
+            ))
+          }
+        </div>
         <div className='order'>
           <p>
             <span>Total</span>

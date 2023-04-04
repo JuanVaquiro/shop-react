@@ -3,13 +3,15 @@
 	width: 360px;
 	padding: 24px;
 	box-sizing: border-box;
-	position: absolute;
-	right: 0;
 	background-color: white;
-	top: 60px;
-	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pin);
+	position: fixed;
+	top: 60px;
+	right: 0;
+	bottom: 0;
+	overflow-y: auto;
+	height: 84%;
 }
 .MyOrder img{
 	width: 34px;
@@ -22,6 +24,13 @@
 .title-container img {
 	transform: rotate(180deg);
 	margin-right: 14px;
+}
+.cart-product-list {
+	max-height: calc(100vh - 340px);
+	overflow-y: auto;
+}
+.cart-product-list::-webkit-scrollbar {
+	display: none;
 }
 .title-order {
 	font-size: var(--lg);
