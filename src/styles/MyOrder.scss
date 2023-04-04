@@ -25,10 +25,12 @@
 	transform: rotate(180deg);
 	margin-right: 14px;
 }
+// product-list scroll
 .cart-product-list {
 	max-height: calc(100vh - 340px);
 	overflow-y: auto;
 }
+// propiedad para ocultar el scroll overflow
 .cart-product-list::-webkit-scrollbar {
 	display: none;
 }
