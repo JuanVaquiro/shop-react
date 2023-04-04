@@ -2,14 +2,17 @@
 import { useContext } from 'react'
 import AppContext from '../context/AppContext'
 import AddCart from './../../src/assets/icons/add_shopping_cart.svg'
+import Shopping from './../../src/assets/icons/shopping_cart.svg'
 import '../styles/ProductItem.scss'
 
 const ProductItem = ({ product }) => {
-  const { addToCart } = useContext(AppContext)
+  const { addToCart, removeFromCart, state } = useContext(AppContext)
 
   const handleCart = (item) => {
-    addToCart(item)
+    itsProductAdded() ? removeFromCart(item) : addToCart(item)
   }
+
+  const itsProductAdded = () => !!state.cart.some((item) => item.id === product.id)
 
   return (
     <div className='ProductItem'>
@@ -20,7 +23,15 @@ const ProductItem = ({ product }) => {
           <p>{product.title}</p>
         </div>
         <figure onClick={() => handleCart(product)}>
-          <img src={AddCart} alt='add Cart' />
+          {
+            itsProductAdded()
+              ? (
+                <img className='add-shopping-cart' src={AddCart} alt='' />
+                )
+              : (
+                <img src={Shopping} alt='' />
+                )
+          }
         </figure>
       </div>
     </div>
