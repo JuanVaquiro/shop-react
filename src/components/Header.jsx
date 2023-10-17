@@ -4,9 +4,9 @@ import MyOrder from '../containers/MyOrder'
 import AppContext from '../context/AppContext'
 import LogoS from './../../src/assets/logos/logo_sale.svg'
 import IconMenu from './../../src/assets/icons/icon_menu.svg'
-import YardSale from './../../src/assets/logos/yard_sale.svg'
 import '../styles/Header.scss'
 import MenuSidevar from './MenuSidevar'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [toggle, setToggle] = useState(false)
@@ -32,18 +32,19 @@ const Header = () => {
       />
       <div className='navbar-left'>
         <div className='container-logo'>
-          <img src={YardSale} alt='logo' className='nav-logo' />
-          <strong>Ecommerce</strong>
+          <Link to='/'>
+            <strong>Ecommerce</strong>
+          </Link>
         </div>
         <ul>
           <li>
-            <a href='/'>All</a>
+            <Link to='home'>All</Link>
           </li>
           <li>
-            <a href='/'>Electroni</a>
+            <Link to='home'>Electroni</Link>
           </li>
           <li>
-            <a href='/'>Others</a>
+            <Link to='home'>Others</Link>
           </li>
         </ul>
       </div>

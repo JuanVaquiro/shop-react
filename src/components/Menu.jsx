@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/Menu.scss'
 
 const Menu = () => {
@@ -5,13 +6,10 @@ const Menu = () => {
     <div className='Menu'>
       <ul>
         <li>
-          <a href='/' className='title'>My orders</a>
+          <Link to='account'>My account</Link>
         </li>
         <li>
-          <a href='/'>My account</a>
-        </li>
-        <li>
-          <a href='/'>Sign out</a>
+          <Link to='login'>Sign out</Link>
         </li>
       </ul>
     </div>
