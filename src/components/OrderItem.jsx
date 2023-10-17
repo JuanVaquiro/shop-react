@@ -11,9 +11,9 @@ const OrderItem = ({ product, indexValue }) => {
   return (
     <div className='OrderItem'>
       <figure>
-        <img src={product.images[0]} alt={product.title} />
+        <img src={product.img} alt={product.name} />
       </figure>
-      <p>{product.title}</p>
+      <p>{product.name}</p>
       <p>{product.price}</p>
       <img
         onClick={() => handleRemove(indexValue)}

@@ -14,12 +14,6 @@ const MenuSidevar = () => {
           <a href='/'>Clothes</a>
         </li>
         <li>
-          <a href='/'>Electronics</a>
-        </li>
-        <li>
-          <a href='/'>Furnitures</a>
-        </li>
-        <li>
           <a href='/'>Toys</a>
         </li>
         <li>

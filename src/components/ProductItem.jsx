@@ -16,11 +16,11 @@ const ProductItem = ({ product }) => {
 
   return (
     <div className='ProductItem'>
-      <img src={product.images[0]} alt={product.title} />
+      <img src={product.img} alt={product.name} />
       <div className='product-info'>
         <div>
           <p>${product.price}</p>
-          <p>{product.title}</p>
+          <p>{product.name}</p>
         </div>
         <figure onClick={() => handleCart(product)}>
           {

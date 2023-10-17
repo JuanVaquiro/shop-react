@@ -3,7 +3,7 @@ import ProductItem from '../components/ProductItem'
 import useFetchProducts from '../hooks/useFetchProducts'
 import '../styles/ProductList.scss'
 
-const API = 'https://api.escuelajs.co/api/v1/products?limit=20&offset=1'
+const API = 'http://localhost:3000/product'
 
 const ProductList = () => {
   const products = useFetchProducts(API)

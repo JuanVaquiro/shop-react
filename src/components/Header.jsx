@@ -40,16 +40,7 @@ const Header = () => {
             <a href='/'>All</a>
           </li>
           <li>
-            <a href='/'>Clothes</a>
-          </li>
-          <li>
-            <a href='/'>Electronics</a>
-          </li>
-          <li>
-            <a href='/'>Furnitures</a>
-          </li>
-          <li>
-            <a href='/'>Toys</a>
+            <a href='/'>Electroni</a>
           </li>
           <li>
             <a href='/'>Others</a>
@@ -59,7 +50,7 @@ const Header = () => {
       <div className='navbar-right'>
         <ul>
           <li className='navbar-email' onClick={handleToggle}>
-            platzi@example.com
+            you@gmail.com
           </li>
           <li
             className='navbar-shopping-cart'
